@@ -108,8 +108,9 @@ AddButton(Tab2o, {
         local SCRIPT_URL = "https://raw.githubusercontent.com/FacilityHUB/FacilityHub/refs/heads/main/WarTycoons"
         loadstring(game:HttpGet(SCRIPT_URL))()
     end
-}-------------------------------------------------
--- BUTTON 
+})
+-------------------------------------------------
+-- BUTTON 6
 -------------------------------------------------
 AddButton(Tab4o, {
     Name = "Alchemy hub",
