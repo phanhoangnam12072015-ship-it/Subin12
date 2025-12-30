@@ -47,7 +47,7 @@ MinimizeButton({
 local Tab1o = MakeTab({ Name = "Script Forsaken" })
 local Tab2o = MakeTab({ Name = "Script War Tycoon" })
 local Tab3o = MakeTab({ Name = "Script TSB" })
-
+local Tab4o = MakeTab({ Name = "Script blue block" })
 -------------------------------------------------
 -- BUTTON 1
 -------------------------------------------------
@@ -106,6 +106,17 @@ AddButton(Tab2o, {
         print("FacilityHub button clicked")
 
         local SCRIPT_URL = "https://raw.githubusercontent.com/FacilityHUB/FacilityHub/refs/heads/main/WarTycoons"
+        loadstring(game:HttpGet(SCRIPT_URL))()
+    end
+}-------------------------------------------------
+-- BUTTON 
+-------------------------------------------------
+AddButton(Tab4o, {
+    Name = "Alchemy hub",
+    Callback = function()
+        print("Alchemy hub button clicked")
+
+        local SCRIPT_URL = "https://pastebin.com/raw/FmDrhT3m"
         loadstring(game:HttpGet(SCRIPT_URL))()
     end
 })
