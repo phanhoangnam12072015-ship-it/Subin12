@@ -113,11 +113,11 @@ AddButton(Tab2o, {
 -- BUTTON 6
 -------------------------------------------------
 AddButton(Tab4o, {
-    Name = "Alchemy hub",
+    Name = "Exuso hub",
     Callback = function()
-        print("Alchemy hub button clicked")
+        print("Exuso hub button clicked")
 
-        local SCRIPT_URL = "https://pastebin.com/raw/FmDrhT3m"
+        local SCRIPT_URL = "https://raw.githubusercontent.com/BexruzScripts/Blue-lock-no-cd-reo-get-any-style-script.-WORKS-WITH-WORLD-CLASSES-/refs/heads/main/script.lua"
         loadstring(game:HttpGet(SCRIPT_URL))()
     end
 })
