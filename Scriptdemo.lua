@@ -89,11 +89,23 @@ AddButton(Tab2o, {
 -- BUTTON 4
 -------------------------------------------------
 AddButton(Tab3o, {
-    Name = "Express",
+    Name = "Vexonhub",
     Callback = function()
-        print("Express button clicked")
+        print("Vexonhub button clicked")
 
-        local SCRIPT_URL = "https://api.luarmor.net/files/v3/loaders/d8824b23a4d9f2e0d62b4e69397d206b.lua"
+        local SCRIPT_URL ="https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"
+        loadstring(game:HttpGet(SCRIPT_URL))()
+    end
+})
+-------------------------------------------------
+-- BUTTON 5
+-------------------------------------------------
+AddButton(Tab2o, {
+    Name = "FacilityHub",
+    Callback = function()
+        print("FacilityHub button clicked")
+
+        local SCRIPT_URL = "https://raw.githubusercontent.com/FacilityHUB/FacilityHub/refs/heads/main/WarTycoons"
         loadstring(game:HttpGet(SCRIPT_URL))()
     end
 })
