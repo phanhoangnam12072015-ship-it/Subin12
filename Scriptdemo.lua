@@ -1,0 +1,101 @@
+-- Load Ui REDz V2
+loadstring(game:HttpGet("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua"))()
+
+-------------------------------------------------
+-- WINDOW + KEY SYSTEM
+-------------------------------------------------
+local Window = MakeWindow({
+    Hub = {
+        Title = "Demo Hub",
+        Animation = "By sucacblet"
+    },
+    Key = {
+        KeySystem = true,
+        Title = "Key System",
+        Description = "Enter key to continue",
+        KeyLink = "",
+        Keys = {
+            "muhehehe",
+            "key123",
+            "banbe1",
+            "vip2025"
+        },
+        Notifi = {
+            Notifications = true,
+            CorrectKey = "Correct key! Loading menu...",
+            Incorrectkey = "Wrong key!",
+            CopyKeyLink = ""
+        }
+    }
+})
+
+-------------------------------------------------
+-- MINIMIZE BUTTON
+-------------------------------------------------
+MinimizeButton({
+    Image = "https://share.google/dtzN72e3WzLIw1jZ5",
+    Size = {60, 60},
+    Color = Color3.fromRGB(10, 10, 10),
+    Corner = true,
+    Stroke = false,
+    StrokeColor = Color3.fromRGB(255, 0, 0)
+})
+
+-------------------------------------------------
+-- TABS
+-------------------------------------------------
+local Tab1o = MakeTab({ Name = "Script Forsaken" })
+local Tab2o = MakeTab({ Name = "Script War Tycoon" })
+local Tab3o = MakeTab({ Name = "Script TSB" })
+
+-------------------------------------------------
+-- BUTTON 1
+-------------------------------------------------
+AddButton(Tab1o, {
+    Name = "Sigmaken",
+    Callback = function()
+        print("Sigmaken button clicked")
+
+        local SCRIPT_URL = "https://raw.githubusercontent.com/sigmaboy-sigma-boy/Sigmasaken/refs/heads/main/sigmasakenmain"
+        loadstring(game:HttpGet(SCRIPT_URL))()
+    end
+})
+
+-------------------------------------------------
+-- BUTTON 2 (NEW SCRIPT)
+-------------------------------------------------
+AddButton(Tab1o, {
+    Name = "Nullsaken",
+    Callback = function()
+        print("Ringtabublik button clicked")
+
+        local SCRIPT_URL = "https://raw.githubusercontent.com/34f3f/forsaken.github.io/refs/heads/main/ringtabublik.lua"
+        loadstring(game:HttpGet(SCRIPT_URL))()
+    end
+})
+-------------------------------------------------
+-- BUTTON 3
+-------------------------------------------------
+AddButton(Tab2o, {
+    Name = "AWT(có key)",
+    Callback = function()
+        print("AWT button clicked")
+
+        local SCRIPT_URL = "https://pastebin.com/raw/gf22x6st"
+        loadstring(game:HttpGet(SCRIPT_URL))()
+    end
+})
+-------------------------------------------------
+-- BUTTON 4
+-------------------------------------------------
+AddButton(Tab3o, {
+    Name = "Express",
+    Callback = function()
+        print("Express button clicked")
+
+        local SCRIPT_URL = "https://api.luarmor.net/files/v3/loaders/d8824b23a4d9f2e0d62b4e69397d206b.lua"
+        loadstring(game:HttpGet(SCRIPT_URL))()
+    end
+})
+-------------------------------------------------
+print("Hub loaded successfully!")
